@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch">
+        <observer name="redirect_customer" instance="OmnyfyCustomization\PreLogin\Observer\CheckLoginObserver" />
+    </event>
+    <event name="customer_login">
+        <observer name="after_login_observer" instance="OmnyfyCustomization\PreLogin\Observer\CustomerLoginObserver" />
+    </event>
+</config>

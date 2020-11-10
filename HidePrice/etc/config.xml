@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+ <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <changi_hide_price>
+            <group_hide_price>
+                <enabled>1</enabled>
+            </group_hide_price>
+        </changi_hide_price>
+    </default>
+</config>
